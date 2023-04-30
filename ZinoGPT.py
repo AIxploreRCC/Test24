@@ -48,7 +48,7 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
-query = st.text_input("Question: ", "What is Wardley Mapping?", key="input")
+query = st.text_input("Question: ", "why can't i hold my urine female?", key="input")
 
 if 'messages' not in st.session_state:
     st.session_state['messages'] = get_initial_message()
