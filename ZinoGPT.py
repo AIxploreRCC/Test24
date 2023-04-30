@@ -50,7 +50,7 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = []
     
-query = st.text_input("Question: ", "What causes bladder control problems?", key="input")
+query = st.text_input('Question: ', 'What causes bladder control problems?', key='input')
 
 if 'messages' not in st.session_state:
     st.session_state['messages'] = get_initial_message()
