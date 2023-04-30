@@ -55,3 +55,12 @@ query = st.text_input('Question: ', 'What causes', key='input')
 if 'messages' not in st.session_state:
     st.session_state['messages'] = get_initial_message()
     
+
+if query:
+    with st.spinner("generating..."):
+        messages = st.session_state['messages']
+        messages = update_chat(messages, "user", query)
+        response = get_chatgpt_response(messages, model)
+        messages = update_chat(messages, "assistant", response)
+        st.session_state.past.append(query)
+        st.session_state.generated.append(response)
