@@ -4,9 +4,9 @@ from streamlit_chat import message
 import openai
 
 st.set_page_config(page_title="Chat with ZinoGPT")
-st.title("Chat with SimonGPT")
-st.sidebar.markdown("Developed by Mark Craddock](https://twitter.com/mcraddock)", unsafe_allow_html=True)
-st.sidebar.markdown("Current Version: 0.0.2")
+st.title("Chat with ZinoGPT")
+st.sidebar.markdown("Developed by Mark Craddock](https://twitter.com/ZineEddineKhene)", unsafe_allow_html=True)
+st.sidebar.markdown("gpt-3.5-turbo")
 st.sidebar.markdown("Not optimised")
 st.sidebar.markdown("May run out of OpenAI credits")
 
