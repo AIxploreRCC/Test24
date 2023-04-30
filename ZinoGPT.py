@@ -5,7 +5,7 @@ import openai
 
 st.set_page_config(page_title="Chat with ZinoGPT")
 st.title("Chat with ZinoGPT")
-st.sidebar.markdown("Developed by Mark Craddock](https://twitter.com/ZineEddineKhene)", unsafe_allow_html=True)
+st.sidebar.markdown("Developed by Zine-Eddine KHENE](https://twitter.com/ZineEddineKhene)", unsafe_allow_html=True)
 st.sidebar.markdown("gpt-3.5-turbo")
 st.sidebar.markdown("Not optimised")
 st.sidebar.markdown("May run out of OpenAI credits")
