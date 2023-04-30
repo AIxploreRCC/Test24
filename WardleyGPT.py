@@ -13,7 +13,7 @@ st.sidebar.markdown("May run out of OpenAI credits")
 
 
 # Set OpenAI API model
-model = "gpt-4"
+model = "gpt-3.5-turbo"
 
 def get_initial_message():
     messages=[
