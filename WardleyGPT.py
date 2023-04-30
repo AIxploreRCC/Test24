@@ -15,12 +15,6 @@ st.sidebar.markdown("May run out of OpenAI credits")
 # Set OpenAI API model
 model = "gpt-3.5-turbo"
 
-def get_initial_message():
-    messages=[
-            {"role": "system", "content": """
-            You are ZinoGPT 
-        ]
-    return messages
 
 def get_initial_message():
     messages=[
