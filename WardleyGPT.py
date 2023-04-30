@@ -14,9 +14,6 @@ st.sidebar.markdown("May run out of OpenAI credits")
 # Set OpenAI API model
 model = "gpt-4"
 
-openai.api_key = st.secrets.key['openai.api_key']
-
-
 def get_initial_message():
     messages=[
             {"role": "system", "content": """
