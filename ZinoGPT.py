@@ -56,23 +56,4 @@ query = st.text_input('Question: ', 'What is Wardley Mapping', key='input')
 if 'messages' not in st.session_state:
     st.session_state['messages'] = get_initial_message()
 
-if query:
-    with st.spinner("generating..."):
-        messages = st.session_state['messages']
-        messages = update_chat(messages, 'user', query)
-        response = get_chatgpt_response(messages, model)
-        messages = update_chat(messages, 'assistant', response)
-        if query != "Who are OAC?":
-            insert_data(query, response)
-        st.session_state.past.append(query)
-        st.session_state.generated.append(response)
-
-
-if st.session_state['generated']:
-
-    for i in range(len(st.session_state['generated'])-1, -1, -1):
-        message(st.session_state["generated"][i], key=str(i))
-        message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
-
-        
 
