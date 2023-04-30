@@ -56,15 +56,10 @@ if 'messages' not in st.session_state:
     st.session_state['messages'] = get_initial_message()
     
 if query:
-    with st.spinner('generating...'):
+    with st.spinner("generating..."):
         messages = st.session_state['messages']
-        messages = update_chat(messages, 'user', query)
+        messages = update_chat(messages, "user", query)
         response = get_chatgpt_response(messages, model)
-        messages = update_chat(messages, 'assistant', response)
+        messages = update_chat(messages, "assistant", response)
         st.session_state.past.append(query)
         st.session_state.generated.append(response)
-
-if st.session_state['generated']:
-    for i in range(len(st.session_state['generated'])-1, -1, -1):
-        message(st.session_state["generated"][i], key=str(i))
-        message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
