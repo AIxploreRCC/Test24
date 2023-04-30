@@ -11,6 +11,8 @@ st.sidebar.markdown("Using GPT-4 API")
 st.sidebar.markdown("Not optimised")
 st.sidebar.markdown("May run out of OpenAI credits")
 
+openai.api_key = st.secrets['openai.api_key']
+
 # Set OpenAI API model
 model = "gpt-4"
 
