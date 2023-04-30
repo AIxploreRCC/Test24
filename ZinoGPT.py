@@ -58,9 +58,9 @@ if 'messages' not in st.session_state:
 if query:
     with st.spinner("generating..."):
         messages = st.session_state['messages']
-        messages = update_chat(messages, "user", query)
+        messages = update_chat(messages, 'user', query)
         response = get_chatgpt_response(messages, model)
-        messages = update_chat(messages, "assistant", response)
+        messages = update_chat(messages, 'assistant', response)
         if query != "Who are OAC?":
             insert_data(query, response)
         st.session_state.past.append(query)
