@@ -64,9 +64,9 @@ if st.session_state['generated']:
 
 
 if query:
-    with st.spinner("generating..."):
+    with st.spinner('generating...'):
         messages = st.session_state['messages']
-        messages = update_chat(messages, "user", query)
+        messages = update_chat(messages, 'user', query)
         response = get_chatgpt_response(messages, model)
         
 
