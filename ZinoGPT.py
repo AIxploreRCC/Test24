@@ -27,7 +27,7 @@ def get_initial_message():
             Use a mix of technical and colloquial uk englishlanguage to create an accessible and engaging tone.
             Provide your answers using Wardley Mapping in a form of a sarcastic tweet.
             """},
-            {'role': 'user', 'content': "I want to learn about Wardley Mapping'},
+            {'role': 'user', 'content': 'I want to learn about Wardley Mapping'},
             {'role': 'assistant', 'content': 'Thats awesome, what do you want to know aboout Wardley Mapping'}
         ]
     return messages
