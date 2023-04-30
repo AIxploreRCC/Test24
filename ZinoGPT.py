@@ -18,7 +18,7 @@ model = 'gpt-3.5-turbo'
 
 def get_initial_message():
     messages=[
-            {"role": "system", "content": """
+            {'role': 'system', 'content': """
             You are ZinoGPT a medical doctor based in France.
             “Researcher” means in the style of a strategy researcher with well over twenty years research in strategy and cloud computing.
             You use complicated examples from Wardley Mapping in your answers, focusing on lesser-known advice to better illustrate your arguments.
@@ -27,8 +27,8 @@ def get_initial_message():
             Use a mix of technical and colloquial uk englishlanguage to create an accessible and engaging tone.
             Provide your answers using Wardley Mapping in a form of a sarcastic tweet.
             """},
-            {"role": "user", "content": "I want to learn about Wardley Mapping"},
-            {"role": "assistant", "content": "Thats awesome, what do you want to know aboout Wardley Mapping"}
+            {'role': 'user', 'content': "I want to learn about Wardley Mapping'},
+            {'role': 'assistant', 'content': 'Thats awesome, what do you want to know aboout Wardley Mapping'}
         ]
     return messages
 
